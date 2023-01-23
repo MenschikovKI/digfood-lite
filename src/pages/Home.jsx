@@ -7,21 +7,21 @@ import AdBlock from "../components/AdBlock";
 
 let ads =[
     {
-        caption: "Purina Pro Plan",
+        caption: "Лакомка",
         text: "Лакомство созданное для снижения образования зубного камня у собак мелких пород",
         bg: "violet",
         pic: "https://files.lavkapitomca.ru/storage/product/00/46/30/photo/page/bar111.png"
     },
 
     {
-        caption: "Organix",
+        caption: "Органикс",
         text: "Утиное феле на косточке с кальцием",
         bg: "springgreen",
         pic: "https://files.lavkapitomca.ru/storage/product/00/89/80/photo/kpkerk.png"
     },
 
     {
-        caption: "Мнямс",
+        caption: "Утконосик",
         text: "Вкуснейшее лакомство для собак, обогащенное кальцием для здоровья зубов и костей в натуральном утином мясе",
         bg: "lightblue",
         pic: "https://files.lavkapitomca.ru/storage/product/00/38/52/photo/page/Mnyams-Kalczinirovannye-Kostochki-s-utinym-myasom.png"
@@ -34,7 +34,7 @@ let ads =[
         pic: "https://files.lavkapitomca.ru/storage/product/01/30/44/photo/page/wCt5JbAo.png"
     },
     {
-        caption: "Triol Мясные Лакомства",
+        caption: "Мясные Лакомства",
         text: "Мясные медальоны из утки с тыквой - это натуральное мясное лакомство, богатое витаминами и микроэлементами. Высокое содержание аминокислот в составе мяса утки способствует укреплению иммунитета вашего питомца.",
         bg: "lightblue",
         pic: "https://files.lavkapitomca.ru/storage/product/01/16/93/photo/page/rtjuyguoui.png"
@@ -53,6 +53,7 @@ let ads =[
 const Home = () => {
     return <>
     {/* выводим рекламный блок*/}
+    <h1>Акции</h1>
     <Row className="gx-5 gy-4">
         <Col xs={12}>
             <AdBlock {...ads[0]}/>

@@ -50,9 +50,9 @@ export default () => {
             </Container>
 
         </main>
-        <footer className="container-fluid d-flex align-items-center">
+        <footer className="container-fluid d-flex align-items-center bg-warning">
             <Container>
-            © 2023 Изучение React by Leksa
+            © 2023 Изучение React
             </Container>
         </footer>
     </>

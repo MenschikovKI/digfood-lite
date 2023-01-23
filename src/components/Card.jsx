@@ -15,8 +15,11 @@ const MyCard = (props) => {
     <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Text> {props.description.slice(0,11)}...</Card.Text>
-        <Button>В корзину</Button>
+        
     </Card.Body>
+    <Card.Footer>
+        <Button>В корзину</Button>
+    </Card.Footer>
 </Card>
 }
 

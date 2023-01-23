@@ -8,6 +8,8 @@ import {Routes, Route, Link} from "react-router-dom";
 import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
 import Product from "./pages/Product";
+// импортируем части страницы
+import Header from "./components/Header"
 
 
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzZhNTEwNjU5Yjk4YjAzOGY3NzlkMDYiLCJncm91cCI6Imdyb3VwLTciLCJpYXQiOjE2Njc5MTE5NDcsImV4cCI6MTY5OTQ0Nzk0N30.Spi_jwCabu9qbgWngRXkKp3-Pin66en2TW9A7dejHSE";
@@ -28,11 +30,8 @@ export default () => {
         })
     }, []); // забираем данные с сервера, срабатывает один раз при загрузке станицы, второй аргумент создает зависимость
     return <>
-        <header className="container-fluid">
-            <Link to="/">Главная</Link>
-            <Link to="/catalog">Каталог</Link>
-            
-        </header>
+
+        <Header/>
         <main>
             {/*
                 Col:
@@ -51,6 +50,10 @@ export default () => {
             </Container>
 
         </main>
-        <footer className="container-fluid">footer</footer>
+        <footer className="container-fluid d-flex align-items-center">
+            <Container>
+            © 2023 Изучение React by Leksa
+            </Container>
+        </footer>
     </>
 }

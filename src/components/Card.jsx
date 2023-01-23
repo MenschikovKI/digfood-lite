@@ -8,12 +8,14 @@ const MyCard = (props) => {
     const handler = () => {
         navigate(`/product/${props._id}`);
     }
-    return <Card onClick={handler}>
+
+    
+    return <Card onClick={handler} className="h-100">
     <Card.Img src={props.pictures} className="w-auto"></Card.Img>
     <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Text> {props.description.slice(0,11)}...</Card.Text>
-        <Button>Click</Button>
+        <Button>В корзину</Button>
     </Card.Body>
 </Card>
 }

@@ -6,17 +6,21 @@ import Card from 'react-bootstrap/Card';
 
 const Block = ({pic, bg, caption, text}) => { // сокрашение записи props
     let style = {
-        backgroundImage: "url(https://abrakadabra.fun/uploads/posts/2022-01/thumbs/1643130833_19-abrakadabra-fun-p-pattern-lapki-41.png)",
         backgroundSize: "auto 200%",
         backgroundColor: bg,
-        borderRadius: "15px"
+        borderTop: "10px solid",
+        borderColor: bg,
+        borderRadius: "30px",
+        boxShadow: "0px 30px 40px -20px hsl(0, 0%, 98%)",
+        padding: "30px",
+        margin: "20px" ,
     };
-    return <Row style={style} className="h-100">
-        <Col xs = {8}>
-            <h3>{caption}</h3>
-            <p>{text}</p>
+    return <Row style={style} className="h-200">
+        <Col xs = {9}>
+            <h2>{caption}</h2>
+            <p className="text-dark">{text}</p>
         </Col>
-        <Col xs = {4}>
+        <Col xs = {3}>
             <img src={pic} alt={caption} className="w-75"/>
         </Col>
     </Row>
